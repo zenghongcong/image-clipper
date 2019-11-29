@@ -42,15 +42,15 @@
         <img id="result" src="" alt=""><img id="result-circle" src="" alt="">
     </p>
     <script src="Clipper.js"></script>
-    <script src="stats.min.js"></script>
+    <!-- <script src="stats.min.js"></script> -->
     <script>
       (function () {
         /*
         * start.js
         * */
-        let stats = new Stats()
-        stats.showPanel(0)
-        document.body.appendChild(stats.dom)
+        // let stats = new Stats()
+        // stats.showPanel(0)
+        // document.body.appendChild(stats.dom)
         /*
         * demo by vincent lau
         * */
@@ -62,10 +62,10 @@
             coverSize: 0.8,
             coverOpacity: 0.4,
             beforeAF () {
-              stats.begin()
+              // stats.begin()
             },
             afterAF () {
-              stats.end()
+              // stats.end()
             }
           })
           document.getElementById('file').onchange = function (event) {
